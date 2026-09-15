@@ -1,4 +1,4 @@
 .env
-.venv_api_odoo//
+.venv_api_odoo/
 __pycache__/
 *.pyc
