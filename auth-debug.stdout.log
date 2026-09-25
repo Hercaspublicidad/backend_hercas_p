@@ -1,0 +1,1 @@
+INFO:     127.0.0.1:62178 - "GET /api/v1/auth/sesion HTTP/1.1" 403 Forbidden

@@ -1,0 +1,14 @@
+{
+  "requirements": 83,
+  "decisions": 20,
+  "areas": {
+    "Backend": 28,
+    "Frontend": 25,
+    "Integraciones": 16,
+    "Servicios": 14
+  },
+  "uniqueIds": 83,
+  "sources": 15,
+  "recalculation": "count changed and restored",
+  "renderedSheets": 4
+}

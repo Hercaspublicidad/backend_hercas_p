@@ -1,0 +1,1977 @@
+{
+  "source": "D:\\HERCAS\\Comercial\\Disponible Semana del 06 de Septiembre al 12 de Septiembre-2026- precios actulizados 2026 - Katherine.xls",
+  "source_sha256": "f6c4aab998037d6074a9384a6ff81b21e85108767cf8b9ae83fa18512f02fa9a",
+  "sheet": "Increm 2026 -no todas la va (2)",
+  "source_period": "2026-09-06/2026-09-12",
+  "requested_count": 83,
+  "source_summary": {
+    "available_metropolitan": 47.0,
+    "available_towns": 17.0,
+    "rented": 19.0
+  },
+  "detail_counts": {
+    "candidate_visible": 82,
+    "pending_confirmation": 5,
+    "hidden": 18
+  },
+  "publication_status": "blocked_missing_exact_83rd_code",
+  "applied_to_database": false,
+  "rows": [
+    {
+      "code_original": "PUV-013",
+      "matching_key": "PUV013",
+      "zone": "POBLADO",
+      "source_row": 3,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Cra 43A  # 14-143 Av Poblado. Sentido Norte-Sur.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-014",
+      "matching_key": "PUV014",
+      "zone": "POBLADO",
+      "source_row": 4,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra 43 B # 15-130 Calle de la Buena Mesa. Sentido Norte-Sur.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-018",
+      "matching_key": "PUV018",
+      "zone": "POBLADO",
+      "source_row": 5,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Clle 10 # 41-55 Berlín. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-020",
+      "matching_key": "PUV020",
+      "zone": "POBLADO",
+      "source_row": 6,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Clle 10 # 38-49 Poblado  Edificio Boulevard de la 10. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-031",
+      "matching_key": "PUV031",
+      "zone": "POBLADO",
+      "source_row": 7,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 47A # 5-128 Av. Vegas - Inem. Sentido Sur-Norte.",
+      "note": ""
+    },
+    {
+      "code_original": "PAA-005A",
+      "matching_key": "PAA005A",
+      "zone": "PALMAS",
+      "source_row": 8,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Finca La Primavera-Vereda Sajonia cerca a Asados Doña Rosa (visual subiendo)",
+      "note": ""
+    },
+    {
+      "code_original": "PAA-005B",
+      "matching_key": "PAA005B",
+      "zone": "PALMAS",
+      "source_row": 9,
+      "source_state": "RENTada con el dueño de terreno",
+      "selection": "pending_confirmation",
+      "location": "Finca La Primavera-Vereda Sajonia cerca a Asados Doña Rosa (visual bajando)",
+      "note": "por ahora sin negociciacion de terreno"
+    },
+    {
+      "code_original": "PAM-001",
+      "matching_key": "PAM001",
+      "zone": "PALMAS",
+      "source_row": 10,
+      "source_state": "NO EXISTE",
+      "selection": "hidden",
+      "location": "Vía Palmas Km. 1,6 Asomadera (Visual  subiendo)",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-004A",
+      "matching_key": "PAM004A",
+      "zone": "PALMAS",
+      "source_row": 11,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 38 x Clle. 19 Vía Palmas Antes de María La Baja (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": "ROTATIVA"
+    },
+    {
+      "code_original": "PAM-004B",
+      "matching_key": "PAM004B",
+      "zone": "PALMAS",
+      "source_row": 12,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 38 x .Clle. 19 Vía Palmas Antes de María La Baja (Visual Bajando). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-005A",
+      "matching_key": "PAM005A",
+      "zone": "PALMAS",
+      "source_row": 13,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 38 Vía Palmas Después de María La Baja (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-005B",
+      "matching_key": "PAM005B",
+      "zone": "PALMAS",
+      "source_row": 14,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 38 Vía Palmas Después de María La Baja (Visual Bajando). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-007A",
+      "matching_key": "PAM007A",
+      "zone": "PALMAS",
+      "source_row": 15,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Cra. 38 x Clle 26A Contiguo al Estadero El Indio (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": "INDEFINIDO HASTA EL MOMENTO"
+    },
+    {
+      "code_original": "PAM-007B",
+      "matching_key": "PAM007B",
+      "zone": "PALMAS",
+      "source_row": 16,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 38 x Clle. 26A Contiguo al Estadero El Indio (Visual Bajando). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-009A",
+      "matching_key": "PAM009A",
+      "zone": "PALMAS",
+      "source_row": 17,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Entre María La Baja y la Bomba Esso (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-009B",
+      "matching_key": "PAM009B",
+      "zone": "PALMAS",
+      "source_row": 18,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Entre María La Baja y la Bomba Esso (Visual  Bajando). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-025",
+      "matching_key": "PAM025",
+      "zone": "PALMAS",
+      "source_row": 19,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra 9 # 16A Sur 140 Vía Palmas 200 Mts arriba del cruce con la Vía al Tesoro (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-027A",
+      "matching_key": "PAM027A",
+      "zone": "PALMAS",
+      "source_row": 20,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas 250 Mts arriba del cruce con la Vía al Tesoro (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-027B",
+      "matching_key": "PAM027B",
+      "zone": "PALMAS",
+      "source_row": 21,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas 250 Mts arriba del cruce con la Vía al Tesoro (Visual Bajando). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-029",
+      "matching_key": "PAM029",
+      "zone": "PALMAS",
+      "source_row": 22,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Tienda Creativa. Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-034",
+      "matching_key": "PAM034",
+      "zone": "PALMAS",
+      "source_row": 23,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "100 Mts antes de Chacaltaya con Visual Subiendo. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-036",
+      "matching_key": "PAM036",
+      "zone": "PALMAS",
+      "source_row": 24,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Colegio Hontanares Frente a Chacaltaya (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": "11 Meses"
+    },
+    {
+      "code_original": "PAM-037",
+      "matching_key": "PAM037",
+      "zone": "PALMAS",
+      "source_row": 25,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Colegio Hontanares Frente a Chacaltaya (Visual Bajando). Sentido Oriente-Occidente.",
+      "note": "contrato 1 año"
+    },
+    {
+      "code_original": "PAM-042A",
+      "matching_key": "PAM042A",
+      "zone": "PALMAS",
+      "source_row": 26,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Estadero El Zarzal (Subiendo). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-042B",
+      "matching_key": "PAM042B",
+      "zone": "PALMAS",
+      "source_row": 27,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Estadero El Zarzal (Visual Bajando). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-051",
+      "matching_key": "PAM051",
+      "zone": "PALMAS",
+      "source_row": 28,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Km. 14 Curva Chevigñon (Peñasco) Km 13 + 825. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-055A",
+      "matching_key": "PAM055A",
+      "zone": "PALMAS",
+      "source_row": 29,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Sector Champiñones (Visual Subiendo) Km 15 + 080 ó 120. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-055B",
+      "matching_key": "PAM055B",
+      "zone": "PALMAS",
+      "source_row": 30,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Sector Champiñones (Visual Bajando) Km 15 + 080  ó 120. Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAM-061",
+      "matching_key": "PAM061",
+      "zone": "PALMAS",
+      "source_row": 31,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas Km 17 Diagonal a la Glorieta Mall Indiana - Envigado Km 16 + 450. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PAT-010A",
+      "matching_key": "PAT010A",
+      "zone": "PALMAS",
+      "source_row": 32,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Intersección El Tesoro. Vía El Tesoro hacia las Palmas. (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": "1 Año"
+    },
+    {
+      "code_original": "PAT-010B",
+      "matching_key": "PAT010B",
+      "zone": "PALMAS",
+      "source_row": 33,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Intersección El Tesoro. Vía el Tesoro hacia las Palmas. (Visual Bajando). Sentido Oriente-Occidente.",
+      "note": "ROTATIVA"
+    },
+    {
+      "code_original": "PAT-013A",
+      "matching_key": "PAT013A",
+      "zone": "PALMAS",
+      "source_row": 34,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas con los Balsos Clle 16A Sur # 9E-157 Inmunizadora Serye-Cara 1. Sentido Occidente-Oriente.",
+      "note": "Contrato a un año"
+    },
+    {
+      "code_original": "PAT-013B",
+      "matching_key": "PAT013B",
+      "zone": "PALMAS",
+      "source_row": 35,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Palmas con los Balsos Clle 16A Sur # 9E-157 Inmunizadora Serye-Cara 2. Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-009",
+      "matching_key": "PUV009",
+      "zone": "CENTRO",
+      "source_row": 36,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 45 # 43-102. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-041",
+      "matching_key": "PUV041",
+      "zone": "CENTRO",
+      "source_row": 37,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 55 # 39-16 Av. Del Ferrocarril. Sentido Sur-Norte.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-052A",
+      "matching_key": "PUV052A",
+      "zone": "CENTRO",
+      "source_row": 38,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 59 # 49-106 (Visual Subiendo). Sentido Norte-Sur.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-052B",
+      "matching_key": "PUV052B",
+      "zone": "CENTRO",
+      "source_row": 39,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 59 # 49-106 (Visual Bajando). Sentido Sur-Norte.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-057",
+      "matching_key": "PUV057",
+      "zone": "CENTRO",
+      "source_row": 40,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 57 # 51-158 Minorista (Visual Subiendo). Sentido Norte-2.",
+      "note": "ROTATIVA"
+    },
+    {
+      "code_original": "PUV-065",
+      "matching_key": "PUV065",
+      "zone": "CENTRO",
+      "source_row": 41,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 52 # 76-115 Barrio el Bosque. Sentido Sur-Norte.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV 049",
+      "matching_key": "PUV049",
+      "zone": "SAN JUAN - ESTADIO",
+      "source_row": 42,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Clle. 51 # 70-29 Colombia x la 70 (Frente al Estadio). Sentido Oriente-Occidente.",
+      "note": "Renovacion Mensual"
+    },
+    {
+      "code_original": "PUV-060",
+      "matching_key": "PUV060",
+      "zone": "SAN JUAN - ESTADIO",
+      "source_row": 43,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Centro Comercial San Juan 70 (Visual Subiendo). Sentido Oriente-Occidente.",
+      "note": "ROTATIVA"
+    },
+    {
+      "code_original": "PUV-061",
+      "matching_key": "PUV061",
+      "zone": "SAN JUAN - ESTADIO",
+      "source_row": 44,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Centro Comercial San Juan 70 (Visual Bajando). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-078A",
+      "matching_key": "PUV078A",
+      "zone": "AVENIDA 33",
+      "source_row": 45,
+      "source_state": "MANTENIMIENTO",
+      "selection": "hidden",
+      "location": "Av. 33 No. 74B-233 (Visual subiendo)",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-078B",
+      "matching_key": "PUV078B",
+      "zone": "AVENIDA 33",
+      "source_row": 46,
+      "source_state": "MANTENIMIENTO",
+      "selection": "hidden",
+      "location": "Av. 33 No. 74B-233 (Visual Occidente Oriente)",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-079A",
+      "matching_key": "PUV079A",
+      "zone": "AVENIDA 33",
+      "source_row": 47,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 78 # 33-17. Av 33 (Visual Subiendo). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-079B",
+      "matching_key": "PUV079B",
+      "zone": "AVENIDA 33",
+      "source_row": 48,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 78 # 33-17. Av 33 (Visual Bajando). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-080A",
+      "matching_key": "PUV080A",
+      "zone": "AVENIDA BOLIVARIANA",
+      "source_row": 49,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Cra. 64 # 42B-24 Av. Bolivariana (Visual Subiendo). Sentido Oriente-Occidente.",
+      "note": "Contrato 1 Año"
+    },
+    {
+      "code_original": "PUV-080B",
+      "matching_key": "PUV080B",
+      "zone": "AVENIDA BOLIVARIANA",
+      "source_row": 50,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 64 # 42B-24. Av. Bolivariana (Visual Bajando). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-081",
+      "matching_key": "PUV081",
+      "zone": "CRA 70-80",
+      "source_row": 51,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Cra. 70 # 16-04- Aeroparque Juan Pablo II-Acceso Parqueadero Norte. Sentido Sur-Norte.",
+      "note": "6 MESES"
+    },
+    {
+      "code_original": "PUV-084A",
+      "matching_key": "PUV084A",
+      "zone": "CRA 70-80",
+      "source_row": 52,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Clle. 2 Sur # 65-146 Frente a Campos de Paz. Sentido Sur-Norte.",
+      "note": "Ojo Molinos a acecho"
+    },
+    {
+      "code_original": "PUV-084B",
+      "matching_key": "PUV084B",
+      "zone": "CRA 70-80",
+      "source_row": 53,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Clle. 2 Sur # 65-146 Frente a Campos de Paz. Sentido Norte-Sur.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-087 A",
+      "matching_key": "PUV087A",
+      "zone": "CRA 70-80",
+      "source_row": 54,
+      "source_state": "DESINSTALADA",
+      "selection": "hidden",
+      "location": "CRA 70 No 16-04- AEROPARQUE JUAN PABLO II-MEDELLIN ACCESO 3 PLAZOLETA 1",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-087 B",
+      "matching_key": "PUV087B",
+      "zone": "CRA 70-80",
+      "source_row": 55,
+      "source_state": "DESINSTALADA",
+      "selection": "hidden",
+      "location": "CRA 70 No 16-04- AEROPARQUE JUAN PABLO II-MEDELLIN ACCESO 3 PLAZOLETA 1",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-089",
+      "matching_key": "PUV089",
+      "zone": "CRA 70-80",
+      "source_row": 56,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra 70 # 16-04- Aeroparque Juan Pablo II-Ingreso 1 Sector Compostaje. Sentido Sur-Norte.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-091",
+      "matching_key": "PUV091",
+      "zone": "CRA 80 - SIMON BOLIVAR",
+      "source_row": 57,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 81 # 40-66. Sentido Norte-Sur.",
+      "note": "ROTATIVA"
+    },
+    {
+      "code_original": "PUV-092",
+      "matching_key": "PUV092",
+      "zone": "CRA 80 - SIMON BOLIVAR",
+      "source_row": 58,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 81 # 34-94 Edificio Keops. Sentido Norte-Sur.",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-034",
+      "matching_key": "PUV034",
+      "zone": "ITAGUI",
+      "source_row": 59,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Clle. 53 # 42-30 (Cancha Intermedia), Autopista Sur. Sentido Norte-Sur.",
+      "note": "contrato 1 año"
+    },
+    {
+      "code_original": "PUV-098",
+      "matching_key": "PUV098",
+      "zone": "ITAGUI",
+      "source_row": 60,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 50A #  39-04 Itagüí. Sentido Norte-Sur.",
+      "note": ""
+    },
+    {
+      "code_original": "PRC-002",
+      "matching_key": "PRC002",
+      "zone": "AUTOPISTA NORTE",
+      "source_row": 61,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Cra. 65 # 103-94. Sentido Norte-Sur.",
+      "note": "ROTATIVA"
+    },
+    {
+      "code_original": "PRC-007",
+      "matching_key": "PRC007",
+      "zone": "AUTOPISTA NORTE",
+      "source_row": 62,
+      "source_state": "revisar dueño de terreno",
+      "selection": "hidden",
+      "location": "CRA 50 A No. 24 A 33 BELLO",
+      "note": ""
+    },
+    {
+      "code_original": "PRC-010A",
+      "matching_key": "PRC010A",
+      "zone": "AUTOPISTA NORTE",
+      "source_row": 63,
+      "source_state": "SALE DEL DISPONIBLE",
+      "selection": "hidden",
+      "location": "Calle . 58 No. 58-12 Villa Nueva Copacabana visual N-S (Haceb)",
+      "note": ""
+    },
+    {
+      "code_original": "PRC-010B",
+      "matching_key": "PRC010B",
+      "zone": "AUTOPISTA NORTE",
+      "source_row": 64,
+      "source_state": "SALE DEL DISPONIBLE",
+      "selection": "hidden",
+      "location": "CALLE . 58 No. 58-12 Villa Nueva Copacabana (Haceb)",
+      "note": ""
+    },
+    {
+      "code_original": "PRC-004A",
+      "matching_key": "PRC004A",
+      "zone": "BELLO",
+      "source_row": 65,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Diagonal 51 # 43–41 Bello. Sentido Norte-Sur.",
+      "note": "ROTATIVA"
+    },
+    {
+      "code_original": "PRC-004B",
+      "matching_key": "PRC004B",
+      "zone": "BELLO",
+      "source_row": 66,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Diagonal 51 # 43–41 Bello. Sentido Sur-Norte.",
+      "note": "Elizabeth"
+    },
+    {
+      "code_original": "PRB-008",
+      "matching_key": "PRB008",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 67,
+      "source_state": "NO EXISTE",
+      "selection": "hidden",
+      "location": "Autopista Medellín - Bogotá. Guarne después del puente",
+      "note": ""
+    },
+    {
+      "code_original": "PRB-009",
+      "matching_key": "PRB009",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 68,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Autopista Medellín-Bogotá antes del primer puente de retorno a Guarne Vereda La Cabaña. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PRB-015",
+      "matching_key": "PRB015",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 69,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Autopista Medellín-Bogotá Copabana antes del Peaje. Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PRB-022",
+      "matching_key": "PRB022",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 70,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Autopista Medellín-Bogotá Vereda Barro Blanco frente a Jardines de Oriente. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PRB-022A",
+      "matching_key": "PRB022A",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 71,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Autopista Medellín-Bogotá Vereda Barro Blanco frente a Jardines de Oriente (Vía Medellín). Sentido Oriente-Occidente.",
+      "note": ""
+    },
+    {
+      "code_original": "PRB-027",
+      "matching_key": "PRB027",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 72,
+      "source_state": "SALE DEL DISPONIBLE",
+      "selection": "hidden",
+      "location": "km 2 Guarde-Autopista Medellín-Bogotá. A una cuadra de la entrada del Parque Arví. Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PRB-029A",
+      "matching_key": "PRB029A",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 73,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Clle. 22 # 44-518 Al lado de la Estación de Servicio Terpel El Faro-Marinilla (Visual Subiendo). Sentido Occidente-Oriente.",
+      "note": ""
+    },
+    {
+      "code_original": "PRB-029B",
+      "matching_key": "PRB029B",
+      "zone": "AUTOPISTA MEDELLIN-BOGOTA OCCIDENTE",
+      "source_row": 74,
+      "source_state": "ya no hay contacto con los dueños, se puede intentar comunicación",
+      "selection": "hidden",
+      "location": "CALLE 22 No. 44-518 (AL LADO ESTACION DE SERVICIO TERPEL EL FARO) MARINILLA visual bajando",
+      "note": ""
+    },
+    {
+      "code_original": "PRP-005A",
+      "matching_key": "PRP005A",
+      "zone": "CALDAS",
+      "source_row": 75,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Variante Caldas cerca a la Estación de Servicios Ancón Sur (Visual Bajando). Sentido Norte-Sur.",
+      "note": ""
+    },
+    {
+      "code_original": "PRP-005B",
+      "matching_key": "PRP005B",
+      "zone": "CALDAS",
+      "source_row": 76,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Variante Caldas cerca a la Estación de Servicios Ancón Sur (Visual Bajando). Sentido Sur-Norte.",
+      "note": ""
+    },
+    {
+      "code_original": "SFU-017A",
+      "matching_key": "SFU017A",
+      "zone": "OCCIDENTE",
+      "source_row": 77,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Km 4 Vía al Tunel de Occidente Vereda Las Playas (Saliendo de Medellín a Santa Fe de Antioquia).",
+      "note": ""
+    },
+    {
+      "code_original": "SFU-017B",
+      "matching_key": "SFU017B",
+      "zone": "OCCIDENTE",
+      "source_row": 78,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Km 4 Vía al Tunel de Occidente Vereda Las Playas (Entrando a Medellín por la Vía San Cristobal).",
+      "note": ""
+    },
+    {
+      "code_original": "SPT-002",
+      "matching_key": "SPT002",
+      "zone": "OCCIDENTE",
+      "source_row": 79,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Sopetran Via al Puente de occidente, Zona de centros recreativos y turisticos, (estacion de servicio zeus)",
+      "note": ""
+    },
+    {
+      "code_original": "SPT-001",
+      "matching_key": "SPT001",
+      "zone": "OCCIDENTE",
+      "source_row": 80,
+      "source_state": "ARRENDADA",
+      "selection": "candidate_visible",
+      "location": "Estación de Gasolina Zeuss de Sopetrán.",
+      "note": ""
+    },
+    {
+      "code_original": "AND-001",
+      "matching_key": "AND001",
+      "zone": "ANDES",
+      "source_row": 81,
+      "source_state": "disponible verificaR ANGI",
+      "selection": "pending_confirmation",
+      "location": "Km 4 Sector Campamento Vía Andes-Medellín.",
+      "note": ""
+    },
+    {
+      "code_original": "AND-002",
+      "matching_key": "AND002",
+      "zone": "ANDES",
+      "source_row": 82,
+      "source_state": "DESINSTALADA",
+      "selection": "hidden",
+      "location": "ANDES-ANTIOQUIA",
+      "note": ""
+    },
+    {
+      "code_original": "APT-003",
+      "matching_key": "APT003",
+      "zone": "APARTADO",
+      "source_row": 83,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Corregimiento El Reposo Vía Carepa-Apartadó.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "APT-005",
+      "matching_key": "APT005",
+      "zone": "APARTADO",
+      "source_row": 84,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Finca El Tesoro al frente de la Bomba de Uniban (Vía Aeropuerto Carepa).",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "CAC-002",
+      "matching_key": "CAC002",
+      "zone": "CAUCASIA",
+      "source_row": 85,
+      "source_state": "disponible verificaR ANGI",
+      "selection": "pending_confirmation",
+      "location": "Caucasia Km 1 Vía a Caucasia. Sentido Sur-Norte.",
+      "note": ""
+    },
+    {
+      "code_original": "CAC-005",
+      "matching_key": "CAC005",
+      "zone": "CAUCASIA",
+      "source_row": 86,
+      "source_state": "disponible verificaR ANGI",
+      "selection": "pending_confirmation",
+      "location": "Estación de Terpel entrada al Aeropuerto, antes del Hospital César Uribe Piedrahita Vía Medellín-Caucasia.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "CHIG-004",
+      "matching_key": "CHIG004",
+      "zone": "CHIGORODÓ",
+      "source_row": 87,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "km 2 Vía Chigorodó-Medellín Finca Torre Molina.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "CHIG-005",
+      "matching_key": "CHIG005",
+      "zone": "CHIGORODÓ",
+      "source_row": 88,
+      "source_state": "NO DISPONIBLE",
+      "selection": "hidden",
+      "location": "Chigorodo vereda el guineo km 8 finca la chiquita 1",
+      "note": ""
+    },
+    {
+      "code_original": "TRB-001",
+      "matching_key": "TRB001",
+      "zone": "TURBO",
+      "source_row": 89,
+      "source_state": "disponible verificaR ANGI",
+      "selection": "pending_confirmation",
+      "location": "Turbo Curva Del Diablo. Apartadó.",
+      "note": ""
+    },
+    {
+      "code_original": "TRB-002",
+      "matching_key": "TRB002",
+      "zone": "TURBO",
+      "source_row": 90,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Entrada a turbo lado izquierdo Bomba Esso frente al Hospital. Apartadó.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "RET-001",
+      "matching_key": "RET001",
+      "zone": "EL RETIRO",
+      "source_row": 91,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "El Retiro (Cerca a Piccolo). Sentido Norte-Sur y Sur-Norte.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "SPM-001",
+      "matching_key": "SPM001",
+      "zone": "SAN PEDRO",
+      "source_row": 92,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía a San Pedro de los Milagros, 1 Km despues de la Quesera, Costado Izquierdo. Sentido Oriente-Occidente.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "SPM-002",
+      "matching_key": "SPM002",
+      "zone": "SAN PEDRO",
+      "source_row": 93,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Finca La Cerezales Vereda la Pulgarina. Km 2 San Pedro Vía Medellín.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "SPM-003",
+      "matching_key": "SPM003",
+      "zone": "SAN PEDRO",
+      "source_row": 94,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "1,5 Km antes de llegar a San Pedro, en toda la Autopista (Taller La Lima). Sentido Sur-Norte.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "RNG-004",
+      "matching_key": "RNG004",
+      "zone": "ORIENTE",
+      "source_row": 95,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Vía Aeropuerto, Llano Grande, Finca Candilejas, El Tablazo.",
+      "note": ""
+    },
+    {
+      "code_original": "YRM-004",
+      "matching_key": "YRM004",
+      "zone": "YARUMAL",
+      "source_row": 96,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Norte, Yarumal. Sentido Sur-Norte.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "YRM-003",
+      "matching_key": "YRM003",
+      "zone": "YARUMAL",
+      "source_row": 97,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Yarumal Barrio Betania Vía la Costa en Km 2 Vía Variante. Sentido Sur-Norte.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "CEJ-003",
+      "matching_key": "CEJ003",
+      "zone": "CEJA",
+      "source_row": 98,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Partidas Rionegro-La Ceja Donde era Don Diego Una Cuadra Antes del Tequendamita. Sentido Sur-Norte.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "CHIG-001",
+      "matching_key": "CHIG001",
+      "zone": "CHIGORODO",
+      "source_row": 99,
+      "source_state": "NO TIENE CONTRATO",
+      "selection": "hidden",
+      "location": "CHIGORODO- Visual Medellin Apartado",
+      "note": ""
+    },
+    {
+      "code_original": "CHIG-002",
+      "matching_key": "CHIG002",
+      "zone": "CHIGORODO",
+      "source_row": 100,
+      "source_state": "NO TIENE CONTRATO",
+      "selection": "hidden",
+      "location": "km 1 via Chigorodo - Mutata",
+      "note": ""
+    },
+    {
+      "code_original": "CHIG-003",
+      "matching_key": "CHIG003",
+      "zone": "CHIGORODO",
+      "source_row": 101,
+      "source_state": "NO TIENE CONTRATO",
+      "selection": "hidden",
+      "location": "FINCA LINDA SOFY (1) visual Chigorodo hacia Uraba",
+      "note": ""
+    },
+    {
+      "code_original": "PUV-025B",
+      "matching_key": "PUV025B",
+      "zone": "MANRIQUE",
+      "source_row": 102,
+      "source_state": "SALE DEL DISPONIBLE",
+      "selection": "hidden",
+      "location": "CLL 67 No 44-110 visual bajando",
+      "note": ""
+    },
+    {
+      "code_original": "DMT-001",
+      "matching_key": "DMT001",
+      "zone": "VIA COSTA ATLANTICA",
+      "source_row": 103,
+      "source_state": "NO DISPONIBLE",
+      "selection": "hidden",
+      "location": "DON MATIA VEREDA SESTILLAL",
+      "note": ""
+    },
+    {
+      "code_original": "TMS-001",
+      "matching_key": "TMS001",
+      "zone": "TAMESIS",
+      "source_row": 104,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Suroeste, Támesis.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "TRZ-003",
+      "matching_key": "TRZ003",
+      "zone": "TARAZÁ",
+      "source_row": 105,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Bajo Cauca, Tarazá.",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "PTB-001",
+      "matching_key": "PTB001",
+      "zone": "PUERTO BERRIO",
+      "source_row": 106,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Puerto Berrio",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    },
+    {
+      "code_original": "PTB-002",
+      "matching_key": "PTB002",
+      "zone": "PUERTO BERRIO",
+      "source_row": 107,
+      "source_state": "DISPONIBLE",
+      "selection": "candidate_visible",
+      "location": "Puerto Berrio. Sentido Norte",
+      "note": "Arrendamiento Mínimo Por 6 Meses"
+    }
+  ],
+  "selection": [
+    {
+      "matching_key": "AND001",
+      "code": "AND-001",
+      "product_id": "HRC-P-021304",
+      "selection": "pending_confirmation",
+      "reason": "disponible verificaR ANGI",
+      "source_row": 81
+    },
+    {
+      "matching_key": "AND002",
+      "code": "AND-002",
+      "product_id": "HRC-P-022705",
+      "selection": "hidden",
+      "reason": "DESINSTALADA",
+      "source_row": 82
+    },
+    {
+      "matching_key": "APT003",
+      "code": "APT-003",
+      "product_id": "HRC-P-021305",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 83
+    },
+    {
+      "matching_key": "APT005",
+      "code": "APT-005",
+      "product_id": "HRC-P-021306",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 84
+    },
+    {
+      "matching_key": "BOG007",
+      "code": "BOG-007",
+      "product_id": "HRC-P-021307",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "CAC002",
+      "code": "CAC-002",
+      "product_id": null,
+      "selection": "pending_confirmation",
+      "reason": "disponible verificaR ANGI",
+      "source_row": 85
+    },
+    {
+      "matching_key": "CAC005",
+      "code": "CAC-005",
+      "product_id": "HRC-P-021308",
+      "selection": "pending_confirmation",
+      "reason": "disponible verificaR ANGI",
+      "source_row": 86
+    },
+    {
+      "matching_key": "CEJ003",
+      "code": "CEJ-003",
+      "product_id": "HRC-P-021309",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 98
+    },
+    {
+      "matching_key": "CHIG001",
+      "code": "CHIG-001",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "NO TIENE CONTRATO",
+      "source_row": 99
+    },
+    {
+      "matching_key": "CHIG002",
+      "code": "CHIG-002",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "NO TIENE CONTRATO",
+      "source_row": 100
+    },
+    {
+      "matching_key": "CHIG003",
+      "code": "CHIG-003",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "NO TIENE CONTRATO",
+      "source_row": 101
+    },
+    {
+      "matching_key": "CHIG004",
+      "code": "CHIG-004",
+      "product_id": "HRC-P-021310",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 87
+    },
+    {
+      "matching_key": "CHIG005",
+      "code": "CHIG-005",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "NO DISPONIBLE",
+      "source_row": 88
+    },
+    {
+      "matching_key": "CRP0021",
+      "code": "CRP-002-1",
+      "product_id": "HRC-P-022701",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "DMT001",
+      "code": "DMT-001",
+      "product_id": "HRC-P-021368",
+      "selection": "hidden",
+      "reason": "NO DISPONIBLE",
+      "source_row": 103
+    },
+    {
+      "matching_key": "OPE001134923",
+      "code": "OPE-001134923",
+      "product_id": "HRC-P-021369",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "PAA005A",
+      "code": "PAA-005A",
+      "product_id": "HRC-P-021370",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 8
+    },
+    {
+      "matching_key": "PAA005B",
+      "code": "PAA-005B",
+      "product_id": "HRC-P-021372",
+      "selection": "pending_confirmation",
+      "reason": "RENTada con el dueño de terreno",
+      "source_row": 9
+    },
+    {
+      "matching_key": "PAM001",
+      "code": "PAM-001",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "NO EXISTE",
+      "source_row": 10
+    },
+    {
+      "matching_key": "PAM004A",
+      "code": "PAM-004A",
+      "product_id": "HRC-P-021374",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 11
+    },
+    {
+      "matching_key": "PAM004B",
+      "code": "PAM-004B",
+      "product_id": "HRC-P-021375",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 12
+    },
+    {
+      "matching_key": "PAM005A",
+      "code": "PAM-005A",
+      "product_id": "HRC-P-021376",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 13
+    },
+    {
+      "matching_key": "PAM005B",
+      "code": "PAM-005B",
+      "product_id": "HRC-P-021377",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 14
+    },
+    {
+      "matching_key": "PAM007A",
+      "code": "PAM-007A",
+      "product_id": "HRC-P-021378",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 15
+    },
+    {
+      "matching_key": "PAM007B",
+      "code": "PAM-007B",
+      "product_id": "HRC-P-021379",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 16
+    },
+    {
+      "matching_key": "PAM009A",
+      "code": "PAM-009A",
+      "product_id": "HRC-P-021380",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 17
+    },
+    {
+      "matching_key": "PAM009B",
+      "code": "PAM-009B",
+      "product_id": "HRC-P-021381",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 18
+    },
+    {
+      "matching_key": "PAM025",
+      "code": "PAM-025",
+      "product_id": "HRC-P-021382",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 19
+    },
+    {
+      "matching_key": "PAM027A",
+      "code": "PAM-027A",
+      "product_id": "HRC-P-021384",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 20
+    },
+    {
+      "matching_key": "PAM027B",
+      "code": "PAM-027B",
+      "product_id": "HRC-P-021385",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 21
+    },
+    {
+      "matching_key": "PAM029",
+      "code": "PAM-029",
+      "product_id": "HRC-P-021386",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 22
+    },
+    {
+      "matching_key": "PAM034",
+      "code": "PAM-034",
+      "product_id": "HRC-P-021551",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 23
+    },
+    {
+      "matching_key": "PAM036",
+      "code": "PAM-036",
+      "product_id": "HRC-P-021387",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 24
+    },
+    {
+      "matching_key": "PAM037",
+      "code": "PAM-037",
+      "product_id": "HRC-P-021388",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 25
+    },
+    {
+      "matching_key": "PAM042A",
+      "code": "PAM-042A",
+      "product_id": "HRC-P-021389",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 26
+    },
+    {
+      "matching_key": "PAM042B",
+      "code": "PAM-042B",
+      "product_id": "HRC-P-021390",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 27
+    },
+    {
+      "matching_key": "PAM051",
+      "code": "PAM-051",
+      "product_id": "HRC-P-021391",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 28
+    },
+    {
+      "matching_key": "PAM055A",
+      "code": "PAM-055A",
+      "product_id": "HRC-P-021392",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 29
+    },
+    {
+      "matching_key": "PAM055B",
+      "code": "PAM-055B",
+      "product_id": "HRC-P-021393",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 30
+    },
+    {
+      "matching_key": "PAM061",
+      "code": "PAM-061",
+      "product_id": "HRC-P-021394",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 31
+    },
+    {
+      "matching_key": "PAT010A",
+      "code": "PAT-010A",
+      "product_id": "HRC-P-021405",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 32
+    },
+    {
+      "matching_key": "PAT010B",
+      "code": "PAT-010B",
+      "product_id": "HRC-P-021406",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 33
+    },
+    {
+      "matching_key": "PAT013A",
+      "code": "PAT-013A",
+      "product_id": "HRC-P-021407",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 34
+    },
+    {
+      "matching_key": "PAT013B",
+      "code": "PAT-013B",
+      "product_id": "HRC-P-021408",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 35
+    },
+    {
+      "matching_key": "PRB008",
+      "code": "PRB-008",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "NO EXISTE",
+      "source_row": 67
+    },
+    {
+      "matching_key": "PRB009",
+      "code": "PRB-009",
+      "product_id": "HRC-P-021409",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 68
+    },
+    {
+      "matching_key": "PRB015",
+      "code": "PRB-015",
+      "product_id": "HRC-P-021410",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 69
+    },
+    {
+      "matching_key": "PRB022",
+      "code": "PRB-022",
+      "product_id": "HRC-P-021411",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 70
+    },
+    {
+      "matching_key": "PRB022A",
+      "code": "PRB-022A",
+      "product_id": "HRC-P-021412",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 71
+    },
+    {
+      "matching_key": "PRB027",
+      "code": "PRB-027",
+      "product_id": "HRC-P-021413",
+      "selection": "hidden",
+      "reason": "SALE DEL DISPONIBLE",
+      "source_row": 72
+    },
+    {
+      "matching_key": "PRB029A",
+      "code": "PRB-029A",
+      "product_id": "HRC-P-022698",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 73
+    },
+    {
+      "matching_key": "PRB029B",
+      "code": "PRB-029B",
+      "product_id": "HRC-P-022706",
+      "selection": "hidden",
+      "reason": "ya no hay contacto con los dueños, se puede intentar comunicación",
+      "source_row": 74
+    },
+    {
+      "matching_key": "PRC002",
+      "code": "PRC-002",
+      "product_id": "HRC-P-021414",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 61
+    },
+    {
+      "matching_key": "PRC004A",
+      "code": "PRC-004A",
+      "product_id": "HRC-P-021415",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 65
+    },
+    {
+      "matching_key": "PRC004B",
+      "code": "PRC-004B",
+      "product_id": "HRC-P-021416",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 66
+    },
+    {
+      "matching_key": "PRC007",
+      "code": "PRC-007",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "revisar dueño de terreno",
+      "source_row": 62
+    },
+    {
+      "matching_key": "PRC010A",
+      "code": "PRC-010A",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "SALE DEL DISPONIBLE",
+      "source_row": 63
+    },
+    {
+      "matching_key": "PRC010B",
+      "code": "PRC-010B",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "SALE DEL DISPONIBLE",
+      "source_row": 64
+    },
+    {
+      "matching_key": "PRP005A",
+      "code": "PRP-005A",
+      "product_id": "HRC-P-021417",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 75
+    },
+    {
+      "matching_key": "PRP005B",
+      "code": "PRP-005B",
+      "product_id": "HRC-P-021418",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 76
+    },
+    {
+      "matching_key": "PRR001",
+      "code": "PRR-001",
+      "product_id": "HRC-P-021419",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "PTB001",
+      "code": "PTB-001",
+      "product_id": "HRC-P-021420",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 106
+    },
+    {
+      "matching_key": "PTB002",
+      "code": "PTB-002",
+      "product_id": null,
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 107
+    },
+    {
+      "matching_key": "PUV009",
+      "code": "PUV-009",
+      "product_id": "HRC-P-021421",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 36
+    },
+    {
+      "matching_key": "PUV013",
+      "code": "PUV-013",
+      "product_id": "HRC-P-021518",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 3
+    },
+    {
+      "matching_key": "PUV014",
+      "code": "PUV-014",
+      "product_id": "HRC-P-022697",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 4
+    },
+    {
+      "matching_key": "PUV018",
+      "code": "PUV-018",
+      "product_id": "HRC-P-021422",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 5
+    },
+    {
+      "matching_key": "PUV020",
+      "code": "PUV-020",
+      "product_id": "HRC-P-021450",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 6
+    },
+    {
+      "matching_key": "PUV025B",
+      "code": "PUV-025B",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "SALE DEL DISPONIBLE",
+      "source_row": 102
+    },
+    {
+      "matching_key": "PUV031",
+      "code": "PUV-031",
+      "product_id": "HRC-P-021423",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 7
+    },
+    {
+      "matching_key": "PUV034",
+      "code": "PUV-034",
+      "product_id": "HRC-P-021424",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 59
+    },
+    {
+      "matching_key": "PUV041",
+      "code": "PUV-041",
+      "product_id": "HRC-P-021425",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 37
+    },
+    {
+      "matching_key": "PUV049",
+      "code": "PUV 049",
+      "product_id": "HRC-P-021426",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 42
+    },
+    {
+      "matching_key": "PUV052A",
+      "code": "PUV-052A",
+      "product_id": "HRC-P-022708",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 38
+    },
+    {
+      "matching_key": "PUV052B",
+      "code": "PUV-052B",
+      "product_id": "HRC-P-022709",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 39
+    },
+    {
+      "matching_key": "PUV057",
+      "code": "PUV-057",
+      "product_id": "HRC-P-021428",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 40
+    },
+    {
+      "matching_key": "PUV060",
+      "code": "PUV-060",
+      "product_id": "HRC-P-021429",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 43
+    },
+    {
+      "matching_key": "PUV061",
+      "code": "PUV-061",
+      "product_id": "HRC-P-021430",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 44
+    },
+    {
+      "matching_key": "PUV065",
+      "code": "PUV-065",
+      "product_id": "HRC-P-021431",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 41
+    },
+    {
+      "matching_key": "PUV078A",
+      "code": "PUV-078A",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "MANTENIMIENTO",
+      "source_row": 45
+    },
+    {
+      "matching_key": "PUV078B",
+      "code": "PUV-078B",
+      "product_id": null,
+      "selection": "hidden",
+      "reason": "MANTENIMIENTO",
+      "source_row": 46
+    },
+    {
+      "matching_key": "PUV079A",
+      "code": "PUV-079A",
+      "product_id": "HRC-P-021527",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 47
+    },
+    {
+      "matching_key": "PUV079B",
+      "code": "PUV-079B",
+      "product_id": "HRC-P-021528",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 48
+    },
+    {
+      "matching_key": "PUV080A",
+      "code": "PUV-080A",
+      "product_id": "HRC-P-021432",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 49
+    },
+    {
+      "matching_key": "PUV080B",
+      "code": "PUV-080B",
+      "product_id": "HRC-P-021433",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 50
+    },
+    {
+      "matching_key": "PUV081",
+      "code": "PUV-081",
+      "product_id": "HRC-P-021434",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 51
+    },
+    {
+      "matching_key": "PUV084A",
+      "code": "PUV-084A",
+      "product_id": "HRC-P-021435",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 52
+    },
+    {
+      "matching_key": "PUV084B",
+      "code": "PUV-084B",
+      "product_id": "HRC-P-021436",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 53
+    },
+    {
+      "matching_key": "PUV087A",
+      "code": "PUV-087 A",
+      "product_id": "HRC-P-022711",
+      "selection": "hidden",
+      "reason": "DESINSTALADA",
+      "source_row": 54
+    },
+    {
+      "matching_key": "PUV087B",
+      "code": "PUV-087 B",
+      "product_id": "HRC-P-022712",
+      "selection": "hidden",
+      "reason": "DESINSTALADA",
+      "source_row": 55
+    },
+    {
+      "matching_key": "PUV089",
+      "code": "PUV-089",
+      "product_id": "HRC-P-021515",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 56
+    },
+    {
+      "matching_key": "PUV091",
+      "code": "PUV-091",
+      "product_id": "HRC-P-021437",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 57
+    },
+    {
+      "matching_key": "PUV092",
+      "code": "PUV-092",
+      "product_id": "HRC-P-022699",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 58
+    },
+    {
+      "matching_key": "PUV095A",
+      "code": "PUV-095A",
+      "product_id": "HRC-P-022700",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "PUV095B",
+      "code": "PUV-095B",
+      "product_id": "HRC-P-022702",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "PUV098",
+      "code": "PUV-098",
+      "product_id": "HRC-P-021438",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 60
+    },
+    {
+      "matching_key": "RET001",
+      "code": "RET-001",
+      "product_id": "HRC-P-021439",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 91
+    },
+    {
+      "matching_key": "RNG004",
+      "code": "RNG-004",
+      "product_id": "HRC-P-021440",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 95
+    },
+    {
+      "matching_key": "SFU001",
+      "code": "SFU-001",
+      "product_id": "HRC-P-021441",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "SFU017A",
+      "code": "SFU-017A",
+      "product_id": "HRC-P-021442",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 77
+    },
+    {
+      "matching_key": "SFU017B",
+      "code": "SFU-017B",
+      "product_id": "HRC-P-021443",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 78
+    },
+    {
+      "matching_key": "SFU018",
+      "code": "SFU-018",
+      "product_id": "HRC-P-021444",
+      "selection": "hidden",
+      "reason": "Ausente de la sábana más reciente localizada",
+      "source_row": null
+    },
+    {
+      "matching_key": "SPM001",
+      "code": "SPM-001",
+      "product_id": "HRC-P-022696",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 92
+    },
+    {
+      "matching_key": "SPM002",
+      "code": "SPM-002",
+      "product_id": "HRC-P-022725",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 93
+    },
+    {
+      "matching_key": "SPM003",
+      "code": "SPM-003",
+      "product_id": "HRC-P-022726",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 94
+    },
+    {
+      "matching_key": "SPT001",
+      "code": "SPT-001",
+      "product_id": "HRC-P-021445",
+      "selection": "candidate_visible",
+      "reason": "ARRENDADA",
+      "source_row": 80
+    },
+    {
+      "matching_key": "SPT002",
+      "code": "SPT-002",
+      "product_id": null,
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 79
+    },
+    {
+      "matching_key": "TMS001",
+      "code": "TMS-001",
+      "product_id": "HRC-P-021446",
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 104
+    },
+    {
+      "matching_key": "TRB001",
+      "code": "TRB-001",
+      "product_id": null,
+      "selection": "pending_confirmation",
+      "reason": "disponible verificaR ANGI",
+      "source_row": 89
+    },
+    {
+      "matching_key": "TRB002",
+      "code": "TRB-002",
+      "product_id": null,
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 90
+    },
+    {
+      "matching_key": "TRZ003",
+      "code": "TRZ-003",
+      "product_id": null,
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 105
+    },
+    {
+      "matching_key": "YRM003",
+      "code": "YRM-003",
+      "product_id": null,
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 97
+    },
+    {
+      "matching_key": "YRM004",
+      "code": "YRM-004",
+      "product_id": null,
+      "selection": "candidate_visible",
+      "reason": "DISPONIBLE",
+      "source_row": 96
+    }
+  ]
+}

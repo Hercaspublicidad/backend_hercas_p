@@ -1,4 +1,14 @@
 .env
+.env.*
+!.env.example
 venv_api_odoo/
+venv_apiodoo/
+.venv/
+.worktrees/
 __pycache__/
 *.pyc
+.pytest_cache/
+node_modules/
+supabase/.temp/
+supabase/.branches/
+/tools/catalog-audit/.deps/
