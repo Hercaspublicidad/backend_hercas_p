@@ -16,7 +16,7 @@ Definir cuándo un formulario o conversación crea un lead, campos obligatorios,
 
 ## D-016 — Alta y administración inicial
 
-Estado técnico confirmado: registro público cerrado, confirmación por correo requerida, migraciones aplicadas y RLS activo. Falta completar la invitación del primer administrador, iniciar sesión y probar el aislamiento con dos empresas. Después de esas pruebas se puede cerrar esta decisión.
+Estado técnico confirmado al 26/09/2026: registro público cerrado, confirmación por correo requerida, migraciones aplicadas y RLS activo. `asesoria@hercas.net` aceptó la invitación del primer administrador, inició sesión y accedió a `/plataforma` con `systems_admin`. El aislamiento entre dos empresas se probó en SQL con identidades y registros temporales revertidos, incluida la revocación de una membresía. La validación integral sigue pendiente: Supabase remoto tiene cero empresas y cero membresías reales, y falta comprobar el portal con dos sesiones de clientes reales. No cerrar D-016 ni BE-003 con la sola prueba SQL.
 
 ## D-020 — Límites y conservación
 
