@@ -8,7 +8,15 @@ Definir para cada familia comercial: moneda, unidad de venta, regla de redondeo,
 
 ## D-005 — Disponibilidad operativa
 
-Definir qué sistema tiene autoridad final, el tiempo de expiración de una pre-reserva por familia y quién puede cancelarla. La propuesta técnica es que Odoo confirme la reserva definitiva, Supabase administre la consulta y el calendario, y que las excepciones de cancelación queden auditadas.
+Decisión del usuario (30/09/2026): la plataforma web manda en la disponibilidad y será la herramienta operativa en tiempo real. El calendario compartido de Supabase es la fuente de verdad para consultas, separaciones, bloqueos y reservas; el website y los demás clientes autorizados lo consultan y modifican mediante operaciones controladas. Odoo no confirma ni reemplaza ese estado. Si Odoo registra compromisos sobre los mismos activos, deben incorporarse al calendario web antes de ofrecer esas fechas y conciliarse sin crear una segunda autoridad.
+
+Cada comercial tendrá su propia cuenta en el website y una vista de disponibilidad conectada al cotizador. El cliente final que accede al website y el comercial ven la misma disponibilidad, derivada del mismo calendario. El comercial puede reservar una valla si lo decide durante la gestión de la venta; indica fecha de inicio y fecha de fin según el tiempo acordado, y puede liberarla mediante un flujo trazable. Para el cliente final, la reserva se confirma cuando paga. Katherine lidera el proceso de disponibilidad, sin ser la única persona que registra operaciones. La comprobación de capacidad y el registro de cada operación deben ser atómicos para impedir reservas cruzadas.
+
+Siguen pendientes de decisión el tiempo de expiración de una separación por familia, el alcance de liberación de cada comercial (propias o de todo el equipo), los estados y evidencia para convertir una separación comercial en alquiler confirmado, el evento de pago verificado y su manejo ante fallos o concurrencia, y el tratamiento de compromisos ERP. La separación técnica actual de dos horas no constituye aún una política comercial aprobada. D-005 permanece parcialmente abierta hasta implementar y validar ambos flujos y estos puntos.
+
+La investigación técnica y el flujo recomendado se documentan en `docs/disponibilidad-centro-control.md`. Se propone consulta única como centro de control, separación breve al iniciar pago, conversión transaccional tras pago verificado e idempotencia de eventos. La duración y excepciones requieren decisión funcional antes de activar reservas reales.
+
+Decisión adicional: para cada intervalo de una valla ofertable, el website muestra únicamente **disponible**, **reservada** (temporal) u **ocupada** (confirmada o bloqueada). “Próximamente libre” será una fecha calculada y visible como “disponible desde…”, no un cuarto estado. Las acciones simples del operador son tapar, tapar temporalmente y destapar; cada una exige fechas y se registra con trazabilidad. Actualmente la lista semanal se obtiene revisando un chat; el tablero web debe reemplazar esa consulta manual.
 
 ## D-014 — Captación CRM
 

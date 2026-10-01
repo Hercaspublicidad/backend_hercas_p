@@ -32,6 +32,8 @@ class SupabaseGateway:
             raise ServiceError(401, "Sesión inválida o vencida")
         if response.status_code == 403:
             raise ServiceError(403, "No tienes permisos para esta operación")
+        if response.status_code == 429:
+            raise ServiceError(429, "Demasiadas solicitudes. Inténtalo de nuevo más tarde")
         if response.status_code == 400:
             raise ServiceError(400, "Operación no válida. Revisa el rol, la empresa y que permanezca un administrador activo")
         if response.is_error:

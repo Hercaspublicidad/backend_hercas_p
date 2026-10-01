@@ -23,6 +23,8 @@ async def require_database(
 ) -> SupabaseGateway:
     if credentials is None:
         raise ServiceError(401, "Se requiere una sesión")
+    if len(credentials.credentials) > request.app.state.settings.MAX_BEARER_TOKEN_LENGTH:
+        raise ServiceError(401, "Sesión inválida o vencida")
     return SupabaseGateway(request.app.state.http, request.app.state.settings, credentials.credentials)
 
 

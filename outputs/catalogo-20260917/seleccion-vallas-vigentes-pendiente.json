@@ -15,7 +15,7 @@
     "hidden": 18
   },
   "publication_status": "blocked_missing_exact_83rd_code",
-  "applied_to_database": false,
+  "applied_to_database": true,
   "rows": [
     {
       "code_original": "PUV-013",
@@ -1973,5 +1973,13 @@
       "reason": "DISPONIBLE",
       "source_row": 96
     }
-  ]
+  ],
+  "database_import": {
+    "project_ref": "mmstapaovlvflbiiqgxv",
+    "imported_at": "2026-09-25T17:52:00Z",
+    "assets_loaded": 82,
+    "publication_status": "hidden_pending_current_availability_and_exact_83rd_code",
+    "coordinates_status": "pending_verified_coordinates",
+    "prices_status": "observations_only_not_published"
+  }
 }

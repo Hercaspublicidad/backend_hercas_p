@@ -52,6 +52,14 @@ class ApiTests(unittest.TestCase):
             self.assertEqual(method(path, **kwargs).status_code, 401)
             self.assertEqual(method(path, headers=self.headers, **kwargs).status_code, 403)
 
+    def test_admin_directory_uses_deployed_supabase_contract(self):
+        self.roles = ["systems_admin"]
+        response = self.client.get("/api/v1/auth/administracion?offset=0", headers=self.headers)
+        self.assertEqual(response.status_code, 200)
+        paths = [request.url.path for request in self.requests]
+        self.assertIn("/rest/v1/rpc/admin_user_directory", paths)
+        self.assertNotIn("/rest/v1/rpc/require_strong_auth", paths)
+
     def test_access_update_preserves_user_jwt_and_hides_database_errors(self):
         self.roles = ["systems_admin"]
         path = f"/api/v1/auth/usuarios/{USER_ID}/acceso"
@@ -125,6 +133,23 @@ class ApiTests(unittest.TestCase):
         self.auth_status = 200
         self.active = False
         self.assertEqual(self.client.get("/api/v1/auth/sesion", headers=self.headers).status_code, 403)
+
+    def test_auth_rejects_oversized_bearer_tokens_without_upstream_call(self):
+        response = self.client.get(
+            "/api/v1/auth/sesion",
+            headers={"Authorization": f"Bearer {'a' * 9000}"},
+        )
+        self.assertEqual(response.status_code, 401)
+        self.assertFalse(self.requests)
+
+    def test_api_rejects_oversized_request_before_processing(self):
+        response = self.client.post(
+            "/api/v1/auth/invitaciones",
+            headers={**self.headers, "Content-Length": "1048577"},
+            content=b"{}",
+        )
+        self.assertEqual(response.status_code, 413)
+        self.assertFalse(self.requests)
 
     def test_account_without_roles_has_session_but_no_module_access(self):
         self.roles = []

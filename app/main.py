@@ -29,13 +29,25 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
 
     @application.middleware("http")
     async def private_response_headers(request: Request, call_next):
+        content_length = request.headers.get("content-length")
+        if content_length:
+            try:
+                if int(content_length) > configuration.MAX_REQUEST_BODY_BYTES:
+                    return JSONResponse(status_code=413, content={"detail": "La solicitud es demasiado grande"})
+            except ValueError:
+                return JSONResponse(status_code=400, content={"detail": "Solicitud inválida"})
         response = await call_next(request)
         response.headers["Cache-Control"] = "no-store"
         response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["Referrer-Policy"] = "no-referrer"
+        response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
+        response.headers["Cross-Origin-Resource-Policy"] = "same-site"
         return response
     application.add_middleware(
         CORSMiddleware, allow_origins=configuration.CORS_ORIGINS,
-        allow_methods=["GET", "POST"], allow_headers=["Authorization", "Content-Type"],
+        allow_credentials=False, allow_methods=["GET", "POST"],
+        allow_headers=["Authorization", "Content-Type"], max_age=600,
     )
 
     @application.exception_handler(ServiceError)

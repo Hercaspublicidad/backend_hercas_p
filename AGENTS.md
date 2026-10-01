@@ -56,3 +56,15 @@ Preferir la ruta UNC, porque Z: puede no estar montada en la sesión de herramie
 - Etapa 0 es preparación, diagnóstico y decisiones. SER-011 y SER-014 comienzan
   ejecución desde etapa 1, únicamente con sus prerrequisitos resueltos. Los controles
   transversales se verifican en cada entrega y cierran globalmente en etapa 12.
+
+## Reglas persistentes de rama y ejecución
+
+- Todo cambio de backend se realiza únicamente en esta carpeta y en la rama
+  `carlos`. Verificar la rama antes de editar.
+- No cambiar de rama, crear ramas, fusionar, hacer `commit` ni `push` salvo una
+  instrucción explícita del usuario para esa acción puntual.
+- No iniciar, reiniciar ni detener FastAPI, Uvicorn ni otro proceso del backend.
+  El usuario maneja los servidores manualmente.
+- Para cambios de frontend, trabajar únicamente en
+  `D:\Web Hercas\Web\pagina_hercas` y su rama `integraci0n`; no implementar
+  frontend en este repositorio ni en worktrees alternos.

@@ -16,10 +16,12 @@ del cotizador. Esa separación técnica aún es propuesta, no nuevos módulos ap
 Capacidad futura confirmada: el agente podrá incorporar al CRM de Odoo a los
 interesados captados desde la web. Se planifica sin habilitar todavía escrituras.
 
-Decisión comercial confirmada: una encargada mantendrá al día las disponibilidades
-en la plataforma y un administrador de precios del cotizador gestionará las tarifas por producto. Esos registros
-vigentes serán la referencia para cotizar. Roles funcionales, no nombres personales
-codificados, controlarán ambos accesos.
+Decisión comercial confirmada: Katherine lidera la disponibilidad y cada comercial
+opera reservas y alquileres desde su cuenta en el website, con una vista conectada
+al cotizador. El cliente final ve la misma disponibilidad y obtiene su reserva
+cuando paga. Un administrador de precios del cotizador gestiona las tarifas por
+producto. Los registros vigentes son la referencia para cotizar. Los accesos se
+controlan mediante roles funcionales, sin codificar nombres personales.
 
 ## Objetivo y estructura
 
@@ -130,7 +132,7 @@ públicas específicas; no se expondrán endpoints internos para resolver ese ca
 | Módulo | Responsabilidad propuesta | Relación con Odoo | Acceso |
 | --- | --- | --- | --- |
 | Usuarios | Perfiles, invitaciones, asociación a empresa/cliente, roles y permisos | Vincular un cliente web con su contacto/empresa Odoo mediante un mapeo verificado | Cada usuario a su perfil; administración según permiso |
-| Cotizador | Selección, cálculo, borradores, aprobaciones, disponibilidad mantenida por su encargada, tarifas por producto gestionadas por el administrador de precios del cotizador y renders | Catálogo/clientes de Odoo; disponibilidad y precios web con responsables propios; publicación de documentos por acordar | Permisos separados para ventas, disponibilidad y tarifas; clientes según función y propiedad |
+| Cotizador | Selección, cálculo, borradores, aprobaciones, vista de disponibilidad y reserva/alquiler por cada comercial, coordinación de Katherine, tarifas por producto y renders | Catálogo/clientes de Odoo; disponibilidad y precios web con responsables propios; publicación de documentos por acordar | Cuenta individual para cada comercial; permisos separados para ventas, administración de disponibilidad y tarifas; clientes según función y propiedad |
 | Reportes | Indicadores, consultas y exportaciones con alcance interno o por cliente | Leer información empresarial autorizada y combinarla con actividad de la plataforma | Personal según función; cada cliente solo su información |
 | Pagos | Intenciones de pago, seguimiento, notificaciones del proveedor y conciliación | Relacionar el pago con el documento comercial/contable correspondiente | Clientes sobre documentos propios; personal financiero autorizado |
 | CMS | Páginas, secciones, navegación, recursos y flujo de publicación | Referencias a productos cuando haga falta; contenido editorial propio de la web | Editores/admin; público solo contenido publicado |
@@ -182,9 +184,9 @@ Propuesta a validar con el funcionamiento real de Odoo:
 | Precios por producto para cotizar en la web | Plataforma; rol de administrador de precios del cotizador | Usar la versión publicada vigente; referencias Odoo no reemplazan automáticamente estos precios |
 | Descuentos excepcionales y aprobaciones comerciales | Reglas y responsables por confirmar | Conservar precedencia del piloto, sin asumir que todo descuento está autorizado |
 | Datos maestros del activo físico | Origen por confirmar en Odoo/inventario existente | Separarlos de la disponibilidad operativa administrada en la web |
-| Separaciones temporales web | Propuesta: plataforma | Deben reconciliarse con reservas/ocupación de Odoo si existen allí |
-| Disponibilidad operativa del sitio | Plataforma; mantenida por la encargada de disponibilidad | Referencia vigente para consultas del cotizador, web y agente, junto con separaciones y reservas |
-| Reservas comerciales y compromisos originados en Odoo | Plataforma para reservas web; conciliación con Odoo por definir | No presentar disponible un recurso con compromisos vigentes; evitar autoridades paralelas |
+| Separaciones temporales web | Plataforma web, con calendario en Supabase | Deben reconciliarse con compromisos originados en Odoo si existen allí |
+| Disponibilidad operativa del sitio | Plataforma web; calendario en Supabase mantenido por la encargada | Fuente de verdad en tiempo real para cotizador, website y agente, incluidas separaciones y reservas |
+| Reservas comerciales y compromisos originados en Odoo | Calendario web como autoridad; incorporación y conciliación con Odoo por definir | No presentar disponible un recurso con compromisos vigentes; evitar autoridades paralelas |
 | Circuitos, pantallas y relación con activos comerciales | Por confirmar entre Odoo, plataforma y sistema de pantallas | Mantener identificadores vinculados sin duplicar activos físicos |
 | Horarios, listas de reproducción y entregas a pantallas | Propuesta: capacidad operativa de pantallas | Ejecutar campañas sobre capacidad comercial autorizada |
 | Estado del dispositivo y evidencia de reproducción | Sistema de reproducción/dispositivo | Guardar observaciones con fecha y origen; no confundir programación con ejecución |
@@ -288,11 +290,24 @@ Son contratos de organización previstos, todavía no rutas operativas.
 
 ### Disponibilidad dentro del cotizador
 
-**Responsable confirmado.** La encargada de disponibilidad dispone de un panel
-para actualizar recursos, periodos, bloqueos y motivos. Propuesta de rol:
-`availability_manager`, ya presente en el piloto. Su permiso de gestión no implica
-permiso para cambiar precios. Registrar actor, momento, motivo y versión de cada
-cambio, con controles ante ediciones simultáneas.
+**Operación comercial confirmada.** Katherine lidera la disponibilidad. Cada
+comercial tiene una cuenta en el website y una vista de disponibilidad conectada
+al cotizador. Desde allí registra el alquiler o reserva de una valla para el
+periodo que acuerde con el cliente, indicando fecha de inicio y fecha de fin;
+también puede iniciar su liberación. Katherine coordina la operación, pero no es
+la única que registra cambios. La gestión de recursos y bloqueos requiere
+permisos separados de precios. Registrar actor, momento, motivo y versión de
+cada cambio, con controles ante ediciones simultáneas. Falta definir si un
+comercial puede liberar reservas ajenas y cuándo una separación se convierte en
+alquiler confirmado.
+
+El cliente final y el comercial consultan el mismo calendario del website. El
+comercial decide si reserva durante su gestión de venta; para el cliente final,
+la reserva se confirma al pagar. Tras verificar el pago, la creación o conversión
+de la reserva debe comprobar y ocupar capacidad en una transacción. Si el pago
+termina después de que otro actor ocupó el periodo, hace falta una política
+explícita de separación durante el pago y de fallo o reversión; no se presume
+una reserva del cliente por la sola consulta o inicio del pago.
 
 **Qué significa “en vivo”.** El cotizador, la web y el agente consultan la misma
 fuente operativa en el servidor. Reflejar cambios en las vistas abiertas mediante
@@ -300,6 +315,11 @@ notificaciones o actualización acotada; definir el objetivo de latencia y mecan
 al implementar. Mostrar última actualización y estado de conexión. Si se pierde
 conexión, indicar datos desactualizados y no confirmar disponibilidad desde caché.
 La actualización automática de pantalla no reemplaza la comprobación transaccional.
+Por decisión del usuario del 30/09/2026, la plataforma web es la autoridad de
+disponibilidad: Supabase conserva el calendario operativo y el website es su
+interfaz en tiempo real. Una confirmación debe escribirse allí de forma atómica.
+Odoo recibe o aporta compromisos mediante conciliación, sin decidir por separado
+si una valla se ofrece como disponible.
 
 No crear un booleano “disponible” que ignore contratos o reservas. La disponibilidad
 efectiva combina el calendario mantenido por la encargada, bloqueos operativos y
@@ -330,10 +350,10 @@ la convención de intervalos horarios debe definirse explícitamente, para permi
 o impedir franjas contiguas sin ambigüedad. Probar concurrencia, capacidad parcial,
 reprogramación, mantenimiento y dos clientes intentando reservar lo mismo.
 
-Si Odoo también puede generar ocupación, definir coordinación y autoridad antes de
-vender: un bloqueo local no impide que un usuario del ERP reserve el mismo activo.
-La planificación comercial debe consultar o conciliar esos compromisos conforme
-a una política explícita de frescura y confirmación.
+Si Odoo también puede generar ocupación, definir cómo se incorpora al calendario
+web antes de vender: un bloqueo en Supabase no impide por sí solo que un usuario
+del ERP registre el mismo activo. La planificación comercial debe conciliar esos
+compromisos conforme a una política explícita de frescura y resolución de conflictos.
 
 ### Administrador de precios del cotizador
 
@@ -610,7 +630,8 @@ del esquema piloto, sin asumir que su modelo de usuarios cubre la plataforma com
    denegado entre usuarios y módulos. La estructura de carpetas ya está separada.
 3. **Verificar la integración de lectura.** Mapear clientes/productos reales de Odoo,
    unidades e IDs, manejar indisponibilidad y definir la política de sincronización.
-4. **Completar el cotizador.** Crear panel de disponibilidad para la encargada y panel
+4. **Completar el cotizador.** Crear vista de disponibilidad y reserva para cada
+   comercial, coordinación de Katherine y panel
    de tarifas por producto para el administrador de precios del cotizador, con permisos separados. Resolver tarifas publicadas,
    persistir instantáneas y guardar cotizaciones en transacciones. Incorporar
    planificación de disponibilidad, reservas con control concurrente y vencimiento,
