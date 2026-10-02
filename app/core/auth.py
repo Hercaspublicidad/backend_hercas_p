@@ -22,9 +22,19 @@ async def require_database(
     credentials: Annotated[HTTPAuthorizationCredentials | None, Depends(bearer)],
 ) -> SupabaseGateway:
     if credentials is None:
-        raise ServiceError(401, "Se requiere una sesión")
-    return SupabaseGateway(request.app.state.http, request.app.state.settings, credentials.credentials)
+       raise ServiceError(401, "Se requiere una sesión")
 
+    settings = request.app.state.settings
+    access_token = credentials.credentials
+
+    if len(access_token) > settings.MAX_BEARER_TOKEN_LENGTH:
+        raise ServiceError(401, "Sesión inválida")
+
+    return SupabaseGateway(
+        request.app.state.http,
+        settings,
+        access_token,
+    )
 
 DatabaseDependency = Annotated[SupabaseGateway, Depends(require_database)]
 

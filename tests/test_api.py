@@ -250,3 +250,97 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(self.client.get("/api/v1/auth/empresas", headers=self.headers).status_code, 200)
         self.assertEqual(self.requests[-1].url.path, "/rest/v1/customer_accounts")
         self.assertEqual(self.requests[-1].url.params["select"], "id,name")
+
+    def test_api_rejects_oversized_request_before_processing(self):
+    response = self.client.post(
+        "/api/v1/auth/invitaciones",
+        headers={
+            **self.headers,
+            "Content-Length": "1048577",
+        },
+        content=b"{}",
+    )
+
+    self.assertEqual(response.status_code, 413)
+    self.assertFalse(self.requests)
+
+
+    def test_auth_rejects_oversized_bearer_token(self):
+        response = self.client.get(
+            "/api/v1/auth/sesion",
+            headers={
+                "Authorization": f"Bearer {'a' * 9000}",
+            },
+        )
+
+        self.assertEqual(response.status_code, 401)
+        self.assertFalse(self.requests)
+
+
+    def test_security_headers_are_returned(self):
+        response = self.client.get("/health")
+
+        self.assertEqual(response.headers["cache-control"], "no-store")
+        self.assertEqual(
+            response.headers["x-content-type-options"],
+            "nosniff",
+        )
+        self.assertEqual(response.headers["x-frame-options"], "DENY")
+        self.assertEqual(
+            response.headers["referrer-policy"],
+            "no-referrer",
+        )
+        self.assertEqual(
+            response.headers["cross-origin-resource-policy"],
+            "same-site",
+        )
+
+
+    def test_readiness_checks_supabase(self):
+        response = self.client.get("/ready")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.json(),
+            {
+                "status": "ready",
+                "supabase": "available",
+            },
+        )
+        self.assertEqual(
+            self.requests[-1].url.path,
+            "/auth/v1/health",
+        )
+
+
+    def test_docs_can_be_disabled(self):
+        settings = self.settings.model_copy(
+            update={"API_DOCS_ENABLED": False}
+        )
+
+        with TestClient(
+            create_app(
+                settings,
+                httpx.MockTransport(self.respond),
+            )
+        ) as client:
+            self.assertEqual(client.get("/docs").status_code, 404)
+            self.assertEqual(
+                client.get("/openapi.json").status_code,
+                404,
+            )
+
+
+    def test_supabase_rate_limit_is_preserved(self):
+        self.data_status = 429
+
+        response = self.client.get(
+            "/api/v1/cotizador/productos",
+            headers=self.headers,
+        )
+
+        self.assertEqual(response.status_code, 429)
+        self.assertEqual(response.headers["retry-after"], "60")
+        self.assertNotIn("internal secret", response.text)
+
+        

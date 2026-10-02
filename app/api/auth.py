@@ -86,6 +86,11 @@ async def send_invitation(invitation_id: UUID, session: SessionDependency, reque
         )
     except httpx.RequestError as error:
         raise ServiceError(502, "No se pudo enviar la invitación; puedes reintentar") from error
+    if response.status_code == 429:
+        raise ServiceError(
+            429,
+            "Supabase Auth está temporalmente limitado; intenta nuevamente",
+        )   
     if response.is_error:
         raise ServiceError(502, "No se pudo enviar. Revisa SMTP, límites de Auth y si el correo ya tiene cuenta")
     return {"sent": True}

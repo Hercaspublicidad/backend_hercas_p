@@ -1,0 +1,52 @@
+# Credenciales y configuración local
+.env
+.env.*
+*.pem
+*.key
+
+# Entornos y dependencias locales
+.venv/
+venv/
+venv_apiodoo/
+venv_api_odoo/
+node_modules/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Archivos de Git y Codex
+.git/
+.worktrees/
+.vercel/
+.codex/
+.agents/
+
+# Pruebas y herramientas que no ejecuta la API
+tests/
+tools/
+
+# Supabase se administra por separado
+supabase/
+
+# Documentación y archivos de trabajo
+docs/
+outputs/
+AGENTS.md
+README.md
+*.xlsx
+*.xls
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.ndjson
+
+# Registros y archivos temporales
+*.log
+*.tmp
+*.bak
+*.backup

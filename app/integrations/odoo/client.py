@@ -23,6 +23,12 @@ class OdooClient:
                 f"{self.settings.ODOO_URL.rstrip('/')}/json/2/{model}/{method}",
                 headers=headers, json=data or {},
             )
+
+            if response.status_code == 429:
+                raise ServiceError(
+                    429,
+                    "Odoo está temporalmente limitado; intenta nuevamente",
+                )
             response.raise_for_status()
             result = response.json()
             if not isinstance(result, list):

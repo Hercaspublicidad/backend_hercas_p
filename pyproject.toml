@@ -1,0 +1,20 @@
+[project]
+name = "hercas-api"
+version = "0.3.0"
+description = "Backend FastAPI de la plataforma Hercas"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi==0.141.1",
+    "httpx==0.28.1",
+    "pydantic==2.13.5",
+    "pydantic-settings==2.15.0",
+    "supabase==2.31.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "uvicorn==0.53.0"
+]
+
+[tool.vercel]
+entrypoint = "app.main:app"
