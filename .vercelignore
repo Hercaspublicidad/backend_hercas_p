@@ -29,9 +29,6 @@ __pycache__/
 tests/
 tools/
 
-# Supabase se administra por separado
-supabase/
-
 # Documentación y archivos de trabajo
 docs/
 outputs/
