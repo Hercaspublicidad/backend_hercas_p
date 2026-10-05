@@ -17,12 +17,12 @@ con catálogo, versiones de precios, cotizaciones y calendario. La base inicial
 contiene 18 tablas con RLS. La integración operativa de cotizaciones con Odoo y
 el guardado transaccional por API siguen pendientes.
 
-La rama `main` conserva ahora las migraciones de catálogo y disponibilidad
-recuperadas de `origin/disponibilidad` (hasta `20261001202500_preserve_import_advisor.sql`).
+La rama `main` conserva las migraciones de catálogo y disponibilidad recuperadas
+de `origin/disponibilidad` y las tres migraciones posteriores de canje, vencimiento
+de reservas manuales a 72 horas y privacidad pública (hasta
+`20261001221500_availability_barter_public_privacy.sql`).
 Esto integra el historial de código; no aplica por sí mismo migraciones a otro
-proyecto Supabase ni valida un despliegue nuevo. La documentación de seguimiento
-registra avances posteriores de canje y vencimiento de reservas a 72 horas que
-deben conciliarse con su código fuente antes de publicar esta rama.
+proyecto Supabase ni valida un despliegue nuevo.
 
 **Prioridades de diseño: seguridad, web pública rápida y SEO.** Los módulos privados cargan solo
 en sus rutas; renders, reportes pesados y automatizaciones se ejecutarán fuera de

@@ -1,5 +1,18 @@
 # Base de cotizador y disponibilidad
 
+## Integración del código al 05/10/2026
+
+La rama `main` incluye las migraciones posteriores al estado descrito abajo:
+`20261001214500_availability_barter_labels.sql`,
+`20261001220000_manual_reservation_three_day_expiry.sql` y
+`20261001221500_availability_barter_public_privacy.sql`. La clasificación de canje solo se anuncia para activos
+operativos marcados como disponibles en la fuente semanal; la función pública
+final entrega únicamente el ID del activo, sin nombre del socio. Las reservas
+manuales vencen a los tres días, con expiración al consultar o insertar y un
+trabajo `pg_cron` cada minuto. El `hold` comercial conserva su plazo técnico
+separado. Esta integración de archivos no constituye una nueva ejecución de las
+migraciones ni una aceptación del flujo completo de venta.
+
 ## Estado vigente del 01/10/2026
 
 El Excel semanal de Katherine (27/09 a 03/10) se importó a Supabase desarrollo:
