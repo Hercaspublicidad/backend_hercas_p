@@ -13,8 +13,16 @@ está aplicada en `hercas-platform-dev` desde el 17 de septiembre de 2026.
 Se verificaron RLS y privilegios de las nueve tablas. Ver
 [supabase/README.md](supabase/README.md) para pruebas y configuración de Auth pendiente.
 También está aplicada la [base de cotizador y disponibilidad](supabase/COTIZADOR.md),
-con catálogo, versiones de precios, cotizaciones y calendario. Son 18 tablas con
-RLS; los paneles, carga de datos reales e integración operativa con Odoo están pendientes.
+con catálogo, versiones de precios, cotizaciones y calendario. La base inicial
+contiene 18 tablas con RLS. La integración operativa de cotizaciones con Odoo y
+el guardado transaccional por API siguen pendientes.
+
+La rama `main` conserva ahora las migraciones de catálogo y disponibilidad
+recuperadas de `origin/disponibilidad` (hasta `20261001202500_preserve_import_advisor.sql`).
+Esto integra el historial de código; no aplica por sí mismo migraciones a otro
+proyecto Supabase ni valida un despliegue nuevo. La documentación de seguimiento
+registra avances posteriores de canje y vencimiento de reservas a 72 horas que
+deben conciliarse con su código fuente antes de publicar esta rama.
 
 **Prioridades de diseño: seguridad, web pública rápida y SEO.** Los módulos privados cargan solo
 en sus rutas; renders, reportes pesados y automatizaciones se ejecutarán fuera de

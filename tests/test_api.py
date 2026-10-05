@@ -252,17 +252,17 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(self.requests[-1].url.params["select"], "id,name")
 
     def test_api_rejects_oversized_request_before_processing(self):
-    response = self.client.post(
-        "/api/v1/auth/invitaciones",
-        headers={
-            **self.headers,
-            "Content-Length": "1048577",
-        },
-        content=b"{}",
-    )
+        response = self.client.post(
+            "/api/v1/auth/invitaciones",
+            headers={
+                **self.headers,
+                "Content-Length": "1048577",
+            },
+            content=b"{}",
+        )
 
-    self.assertEqual(response.status_code, 413)
-    self.assertFalse(self.requests)
+        self.assertEqual(response.status_code, 413)
+        self.assertFalse(self.requests)
 
 
     def test_auth_rejects_oversized_bearer_token(self):
