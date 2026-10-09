@@ -81,7 +81,7 @@ Los roles de clientes se asignan mediante invitaciones vinculadas a una empresa.
 - Mutaciones de permisos atómicas, auditadas, con bloqueo para impedir desactivar o degradar al último administrador.
 - Cuenta suspendida o rol revocado: se aplica en la siguiente operación del backend y en RLS, sin esperar renovación del JWT.
 - `signOut` revoca refresh tokens; un JWT de acceso emitido puede seguir válido hasta su vencimiento. No se promete revocación instantánea del JWT por cerrar sesión. La suspensión sí se comprueba en cada solicitud.
-- Respuestas Python `no-store`, errores sanitizados, validación sin eco de inputs, CORS limitado al frontend configurado.
+- Respuestas Python `no-store`, errores sanitizados, validación sin eco de inputs, CORS permite todos los orígenes por defecto y puede limitarse mediante `CORS_ORIGINS`; la autorización sigue exigiendo JWT y permisos.
 - Pantallas Auth: `noindex`, `no-referrer`, bloqueo de iframes y CSP parcial (`frame-ancestors`, `object-src`, `base-uri`, `form-action`). No es una CSP estricta contra cualquier XSS.
 - El SDK Auth solo se importa en pantallas de acceso/plataforma. Las páginas comerciales siguen estáticas y sin chequeos de Auth en cada visita.
 - No se implementó WAF ni CAPTCHA. TOTP está habilitado en Auth, pero falta probar enrolamiento y recuperación. Son capas adicionales y no sustituyen autenticación/RLS.

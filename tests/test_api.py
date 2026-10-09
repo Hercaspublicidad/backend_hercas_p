@@ -248,11 +248,30 @@ class ApiTests(unittest.TestCase):
         self.assertNotIn("internal secret", response.text)
         self.assertEqual(self.client.get("/api/v1/integraciones/odoo/clientes?limit=-1", headers=self.headers).status_code, 422)
 
-    def test_cors_allows_only_configured_frontend(self):
-        response = self.client.options("/api/v1/cotizador/productos", headers={"Origin": "http://localhost:3000", "Access-Control-Request-Method": "GET", "Access-Control-Request-Headers": "authorization"})
-        self.assertEqual(response.headers["access-control-allow-origin"], "http://localhost:3000")
-        response = self.client.options("/api/v1/cotizador/productos", headers={"Origin": "https://unknown.example", "Access-Control-Request-Method": "GET"})
-        self.assertNotIn("access-control-allow-origin", response.headers)
+    def test_cors_accepts_requests_from_any_origin(self):
+        for origin, method in (("http://localhost:3000", "GET"), ("https://unknown.example", "POST"), ("https://another.example", "PATCH")):
+            with self.subTest(origin=origin, method=method):
+                response = self.client.options(
+                    "/api/v1/cotizador/productos",
+                    headers={"Origin": origin, "Access-Control-Request-Method": method, "Access-Control-Request-Headers": "authorization,x-client-version"},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response.headers["access-control-allow-origin"], "*")
+                self.assertIn("x-client-version", response.headers["access-control-allow-headers"])
+        response = self.client.get("/api/v1/cotizador/productos", headers={"Origin": "https://unknown.example"})
+        self.assertEqual(response.status_code, 401)
+        self.assertEqual(response.headers["access-control-allow-origin"], "*")
+        authorized = self.client.get("/api/v1/cotizador/productos", headers={**self.headers, "Origin": "https://unknown.example"})
+        self.assertEqual(authorized.status_code, 200)
+        self.assertEqual(authorized.headers["access-control-allow-origin"], "*")
+
+    def test_cors_can_still_be_restricted_by_configuration(self):
+        settings = self.settings.model_copy(update={"CORS_ORIGINS": ["https://frontend.example"]})
+        with TestClient(create_app(settings, httpx.MockTransport(self.respond))) as client:
+            allowed = client.options("/api/v1/cotizador/productos", headers={"Origin": "https://frontend.example", "Access-Control-Request-Method": "GET"})
+            denied = client.options("/api/v1/cotizador/productos", headers={"Origin": "https://unknown.example", "Access-Control-Request-Method": "GET"})
+        self.assertEqual(allowed.headers["access-control-allow-origin"], "https://frontend.example")
+        self.assertNotIn("access-control-allow-origin", denied.headers)
 
     def test_pending_identity_can_reach_acceptance_but_not_business_session(self):
         self.active = False

@@ -105,8 +105,13 @@ Conservar el `.env` existente. Agregar únicamente las variables que falten usan
 ```dotenv
 SUPABASE_URL=https://PROJECT_REF.supabase.co
 SUPABASE_PUBLISHABLE_KEY=sb_publishable_REEMPLAZAR
-CORS_ORIGINS=["http://localhost:3000"]
+CORS_ORIGINS=["*"]
 ```
+
+Por defecto, CORS permite solicitudes desde cualquier origen, método y encabezado,
+sin credenciales de navegador. Si se requiere una lista cerrada, configurar
+`CORS_ORIGINS=["https://frontend.ejemplo.com"]`. CORS no sustituye el JWT ni los
+permisos de cada ruta.
 
 La clave publishable identifica el proyecto, no al usuario. Las rutas de negocio
 requieren `Authorization: Bearer <access_token>` de una sesión Supabase Auth.

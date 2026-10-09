@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     APP_NAME: str = "Hercas Platform API"
     ENABLED_MODULES: list[Literal["cotizador"]] = Field(default_factory=lambda: ["cotizador"])
     APP_ENV: str = "development"
-    CORS_ORIGINS: list[str] = Field(default_factory=lambda: ["http://localhost:3000"])
+    CORS_ORIGINS: list[str] = Field(default_factory=lambda: ["*"])
     HTTP_TIMEOUT_SECONDS: float = Field(default=30, gt=0, le=120)
     MAX_REQUEST_BODY_BYTES: int = Field(default=1_048_576, ge=1_024, le=10_485_760)
     MAX_BEARER_TOKEN_LENGTH: int = Field(default=8_192, ge=512, le=16_384)
