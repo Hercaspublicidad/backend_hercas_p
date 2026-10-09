@@ -45,9 +45,9 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
         response.headers["Cross-Origin-Resource-Policy"] = "same-site"
         return response
     application.add_middleware(
-        CORSMiddleware, allow_origins=configuration.CORS_ORIGINS,
-        allow_credentials=False, allow_methods=["GET", "POST"],
-        allow_headers=["Authorization", "Content-Type"], max_age=600,
+        CORSMiddleware, allow_origins=[*],
+        allow_credentials=False, allow_methods=[*],
+        allow_headers=[*], max_age=600,
     )
 
     @application.exception_handler(ServiceError)
