@@ -29,8 +29,8 @@ __pycache__/
 tests/
 tools/
 
-# Supabase se administra por separado
-supabase/
+# Excluir solo las migraciones de la raiz; app/integrations/supabase es codigo de la API
+/supabase/
 
 # Documentación y archivos de trabajo
 docs/
